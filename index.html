@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link
       rel="stylesheet"
@@ -10,10 +10,12 @@
       integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/99ff1b1a00.js"
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
-    ></script>
+    />
   </head>
   <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -91,7 +93,7 @@
               <span class="d-inline d-sm-none"><br /></span>
               <strong><mark>First one is free!</mark></strong>
             </p>
-            <button class="btn btn-success btn-lg">Sign Up!</button>
+            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
             <p class="text-muted">
               <small
                 >You must be over 18 to sign up to our service. Please drink
@@ -253,6 +255,38 @@
         </section>
         top 5 whiskeys of the month table-->
     </article>
+
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sign Up To Whiskey Drop!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="repeatPassword">Repeat Password</label>
+    <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
