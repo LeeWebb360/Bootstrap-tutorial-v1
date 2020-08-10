@@ -16,7 +16,18 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <div class="container-fluid navalert-container">
+    <div class="container-fluid alert-container">
+		<div class="row d-none d-sm-block">
+			<div class="col-12">
+				<div class="site-wide-alert alert alert-warning">
+					<strong>Sale Now On!</strong> We've got a sale on. Get 12 months for
+					the price of 6! <a href="">See here for more details</a>
+				</div>
+			</div>
+		</div>
+    </div>
+	<nav class="navbar navbar-dark navbar-expand-sm">
 		<a href="/" class="navbar-brand">Whiskey Drop</a>
 
 		<button
@@ -60,19 +71,11 @@
 			<p class="navbar-text my-auto mr-2 d-md-none d-lg-inline">
 				<i>Great whiskey delivered to your door!</i>
 			</p>
-			<a href="/login">Sign In / Sign Up</a>
+			<a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
 		</div>
 	</nav>
-	<!--<div class="container alert-container">
-		<div class="row d-none d-sm-block">
-			<div class="col-12">
-				<div class="alert alert-warning">
-					<strong>Sale Now On!</strong> We've got a sale on. Get 12 months for
-					the price of 6! <a href="">See here for more details</a>
-				</div>
-			</div>
-		</div>
-    </div>-->
+    </div>
+	
 		<!--Callout-->
         <div class="opaque-overlay">&nbsp;</div>
     <div class="container-fluid callout-container">
@@ -88,7 +91,7 @@
 						<span class="d-inline d-sm-none"><br /></span>
 						<strong><mark>First one is free!</mark></strong>
 					</p>
-					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+					<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
 					<p class="text-muted">
 						<small
                 >You must be over 18 to sign up to our service. Please drink
